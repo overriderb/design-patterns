@@ -12,6 +12,7 @@
     <modules>
         <module>abstract-factory</module>
         <module>builder</module>
+        <module>composite</module>
     </modules>
 
     <dependencyManagement>
@@ -23,6 +24,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 </project>
