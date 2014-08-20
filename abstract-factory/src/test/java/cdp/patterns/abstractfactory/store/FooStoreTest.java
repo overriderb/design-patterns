@@ -25,6 +25,7 @@ public class FooStoreTest {
         CanonCamera actualCamera = new Canon1000DCamera();
         CanonCamera expectedCamera = store.buyCanonCamera(650);
 
+        assertNotNull(expectedCamera);
         assertEquals(expectedCamera.getBrand(), actualCamera.getBrand());
         assertEquals(expectedCamera.getModel(), actualCamera.getModel());
     }
@@ -34,6 +35,7 @@ public class FooStoreTest {
         CanonCamera actualCamera = new Canon5DMark3Camera();
         CanonCamera expectedCamera = store.buyCanonCamera(2500);
 
+        assertNotNull(expectedCamera);
         assertEquals(expectedCamera.getBrand(), actualCamera.getBrand());
         assertEquals(expectedCamera.getModel(), actualCamera.getModel());
     }
@@ -43,6 +45,7 @@ public class FooStoreTest {
         NikonCamera actualCamera = new NikonD40Camera();
         NikonCamera expectedCamera = store.buyNikonCamera(550);
 
+        assertNotNull(expectedCamera);
         assertEquals(expectedCamera.getBrand(), actualCamera.getBrand());
         assertEquals(expectedCamera.getModel(), actualCamera.getModel());
     }
@@ -52,6 +55,7 @@ public class FooStoreTest {
         NikonCamera actualCamera = new NikonD3XCamera();
         NikonCamera expectedCamera = store.buyNikonCamera(2000);
 
+        assertNotNull(expectedCamera);
         assertEquals(expectedCamera.getBrand(), actualCamera.getBrand());
         assertEquals(expectedCamera.getModel(), actualCamera.getModel());
     }
