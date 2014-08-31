@@ -1,33 +1,33 @@
 package cdp.patterns.composite;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Camera part consist of details
  */
 public class CameraPart extends CameraComponent {
 
-    private List<CameraComponent> cameraComponents;
+    private Map<String, CameraComponent> cameraComponents;
     private String name;
     private String description;
 
     public CameraPart(String name, String description) {
         this.name = name;
         this.description = description;
-        this.cameraComponents = new ArrayList<CameraComponent>();
+        this.cameraComponents = new HashMap<String, CameraComponent>();
     }
 
-    public void add(CameraComponent cameraComponent) {
-        cameraComponents.add(cameraComponent);
+    public void add(String key, CameraComponent cameraComponent) {
+        cameraComponents.put(key, cameraComponent);
     }
 
-    public void remove(CameraComponent cameraComponent) {
-        cameraComponents.remove(cameraComponent);
+    public void remove(String key) {
+        cameraComponents.remove(key);
     }
 
-    public CameraComponent getChild(int i) {
-        return cameraComponents.get(i);
+    public CameraComponent getComponent(String key) {
+        return cameraComponents.get(key);
     }
 
     public String getName() {

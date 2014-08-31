@@ -7,15 +7,15 @@ import java.math.BigDecimal;
  */
 public abstract class CameraComponent {
 
-    public void add(CameraComponent cameraComponent) {
+    public void add(String key, CameraComponent cameraComponent) {
         throw new UnsupportedOperationException();
     }
 
-    public void remove(CameraComponent cameraComponent) {
+    public void remove(String key) {
         throw new UnsupportedOperationException();
     }
 
-    public CameraComponent getChild(int i) {
+    public CameraComponent getComponent(String key) {
         throw new UnsupportedOperationException();
     }
 
