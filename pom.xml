@@ -13,6 +13,7 @@
         <module>abstract-factory</module>
         <module>builder</module>
         <module>composite</module>
+        <module>chain-of-responsibility</module>
     </modules>
 
     <dependencyManagement>
