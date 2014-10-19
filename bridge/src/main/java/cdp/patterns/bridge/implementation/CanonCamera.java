@@ -4,7 +4,6 @@ import cdp.patterns.bridge.exception.CameraPowerException;
 
 /**
  * Canon camera entry
- *
  */
 public class CanonCamera implements Camera {
 
