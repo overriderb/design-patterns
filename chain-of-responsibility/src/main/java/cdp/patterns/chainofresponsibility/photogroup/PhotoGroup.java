@@ -1,4 +1,7 @@
-package cdp.patterns.chainofresponsibility;
+package cdp.patterns.chainofresponsibility.photogroup;
+
+import cdp.patterns.chainofresponsibility.photoentity.PhotoPortfolio;
+import cdp.patterns.chainofresponsibility.photoentity.PhotoType;
 
 /**
  * TODO: Add class description

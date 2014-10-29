@@ -1,5 +1,12 @@
 package cdp.patterns.chainofresponsibility;
 
+import cdp.patterns.chainofresponsibility.photoentity.PhotoPortfolio;
+import cdp.patterns.chainofresponsibility.photoentity.PhotoType;
+import cdp.patterns.chainofresponsibility.photogroup.MacroPhotoGroup;
+import cdp.patterns.chainofresponsibility.photogroup.PhotoGroup;
+import cdp.patterns.chainofresponsibility.photogroup.SportPhotoGroup;
+import cdp.patterns.chainofresponsibility.photogroup.WeddingPhotoGroup;
+
 /**
  * TODO: Add class description
  */

@@ -1,4 +1,4 @@
-package cdp.patterns.chainofresponsibility;
+package cdp.patterns.chainofresponsibility.photoentity;
 
 /**
  * TODO: Add comment
@@ -34,32 +34,26 @@ public class PhotoPortfolio {
         return result;
     }
 
-    public int getPhotoCount() {
-        return photoCount;
+    @Override
+    public String toString() {
+        return "PhotoPortfolio{" +
+                "photoCount=" + photoCount +
+                ", body='" + body + '\'' +
+                ", lens='" + lens + '\'' +
+                ", photoType=" + photoType +
+                '}';
     }
 
     public void setPhotoCount(int photoCount) {
         this.photoCount = photoCount;
     }
 
-    public String getBody() {
-        return body;
-    }
-
     public void setBody(String body) {
         this.body = body;
     }
 
-    public String getLens() {
-        return lens;
-    }
-
     public void setLens(String lens) {
         this.lens = lens;
-    }
-
-    public PhotoType getPhotoType() {
-        return photoType;
     }
 
     public void setPhotoType(PhotoType photoType) {

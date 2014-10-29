@@ -1,4 +1,4 @@
-package cdp.patterns.chainofresponsibility;
+package cdp.patterns.chainofresponsibility.photoentity;
 
 /**
  * TODO: Add comment
