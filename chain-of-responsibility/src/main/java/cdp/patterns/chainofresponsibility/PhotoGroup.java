@@ -5,11 +5,11 @@ package cdp.patterns.chainofresponsibility;
  */
 public abstract class PhotoGroup {
 
-    private PhotoGroup photoGroup;
+    protected PhotoGroup photoGroup;
 
     public void setPhotoGroup(PhotoGroup photoGroup) {
         this.photoGroup = photoGroup;
     }
 
-    public abstract void makePhotoSession();
+    public abstract PhotoPortfolio doPhotoSession(PhotoType photoType);
 }

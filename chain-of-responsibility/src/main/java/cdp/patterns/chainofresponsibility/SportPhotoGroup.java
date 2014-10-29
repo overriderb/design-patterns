@@ -3,15 +3,15 @@ package cdp.patterns.chainofresponsibility;
 /**
  * TODO: Add class description
  */
-public class WeddingPhotoGroup extends PhotoGroup {
+public class SportPhotoGroup extends PhotoGroup {
 
-    private static final String BODY = "Canon 5D Mark III";
-    private static final String LENS = "Canon EF 28-70mm f/2.8 USM L";
+    private static final String BODY = "Canon 1D Mark IV";
+    private static final String LENS = "Canon EF 70-200mm f/2.8 IS USM L";
 
     @Override
     public PhotoPortfolio doPhotoSession(PhotoType photoType) {
         PhotoPortfolio portfolio;
-        if (photoType.equals(PhotoType.WEDDING)) {
+        if (photoType.equals(PhotoType.SPORT)) {
             portfolio = doJob();
         } else {
             portfolio = photoGroup.doPhotoSession(photoType);
@@ -23,8 +23,8 @@ public class WeddingPhotoGroup extends PhotoGroup {
         PhotoPortfolio portfolio = new PhotoPortfolio();
         portfolio.setBody(BODY);
         portfolio.setLens(LENS);
-        portfolio.setPhotoCount(6666);
-        portfolio.setPhotoType(PhotoType.WEDDING);
+        portfolio.setPhotoCount(800);
+        portfolio.setPhotoType(PhotoType.SPORT);
         return portfolio;
     }
 }
