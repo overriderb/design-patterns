@@ -4,7 +4,7 @@ import cdp.patterns.chainofresponsibility.photoentity.PhotoPortfolio;
 import cdp.patterns.chainofresponsibility.photoentity.PhotoType;
 
 /**
- * TODO: Add class description
+ * Professional photo group prepared for wedding photo sessions
  */
 public class WeddingPhotoGroup extends PhotoGroup {
 

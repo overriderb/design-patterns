@@ -4,7 +4,7 @@ import cdp.patterns.chainofresponsibility.photoentity.PhotoPortfolio;
 import cdp.patterns.chainofresponsibility.photoentity.PhotoType;
 
 /**
- * TODO: Add class description
+ * Professional photo group prepared for macro photo sessions
  */
 public class MacroPhotoGroup extends PhotoGroup {
 

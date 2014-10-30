@@ -1,7 +1,7 @@
 package cdp.patterns.chainofresponsibility.photoentity;
 
 /**
- * TODO: Add comment
+ * Type of photo session
  */
 public enum PhotoType {
     WEDDING, MACRO, SPORT

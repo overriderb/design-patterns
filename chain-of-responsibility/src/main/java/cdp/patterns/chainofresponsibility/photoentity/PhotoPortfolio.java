@@ -1,7 +1,7 @@
 package cdp.patterns.chainofresponsibility.photoentity;
 
 /**
- * TODO: Add comment
+ * Photo portfolio contains photos of certain type
  */
 public class PhotoPortfolio {
 
