@@ -1,5 +1,7 @@
 package cdp.patterns.bridge.implementation;
 
+import cdp.patterns.bridge.exception.CameraPowerException;
+
 /**
  * Nikon camera
  */
@@ -16,13 +18,21 @@ public class NikonCamera implements Camera {
     }
 
     @Override
-    public void turnOn() {
-        powerOn = true;
+    public void turnOn() throws CameraPowerException {
+        if (!powerOn) {
+            powerOn = true;
+        } else {
+            throw new CameraPowerException();
+        }
     }
 
     @Override
-    public void turnOff() {
-        powerOn = false;
+    public void turnOff() throws CameraPowerException {
+        if (powerOn) {
+            powerOn = false;
+        } else {
+            throw new CameraPowerException();
+        }
     }
 
     @Override
